@@ -1,5 +1,5 @@
 /**
- * Vite plugin that adds every HTTP endpoint used by 3D-Toolbox (dual mode).
+ * Vite plugin that adds every HTTP endpoint used by Diff-Toolbox (dual mode).
  *
  * ── Scene layout ──────────────────────────────────────────────────────
  * All initial data is bucketed per scene under scenes/<scene>/:
@@ -1278,7 +1278,7 @@ export function apiPlugin(): Plugin {
   logToFile("server", "dev server starting", { scenesRoot: SCENES_ROOT });
 
   return {
-    name: "3d-bbox-tool-api",
+    name: "diff-toolbox-api",
     configureServer(server: ViteDevServer) {
       // ---- BBox mode: list + serve scene assets, persist boxes ----
 
